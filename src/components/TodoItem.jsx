@@ -49,14 +49,14 @@ function TodoItem({ todo }) {
                 }}
                 disabled={todo.completed}
             >
-                {isTodoEditable ? <img src="../public/save.gif" alt="Description of image" /> : <img src="../public/edit.gif" alt="Description of image" /> }
+                {isTodoEditable ? <img src="/save.gif" alt="Description of image" /> : <img src="/edit.gif" alt="Description of image" /> }
             </button>
             {/* Delete Todo Button */}
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
                 onClick={() => deleteTodo(todo.id)}
             >
-                 <img src="../public/trash.gif" alt="Description of image" />
+                 <img src="/trash.gif" alt="Description of image" />
             </button>
         </div>
     );
